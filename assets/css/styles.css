@@ -1,0 +1,177 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'sans-serif';
+	box-sizing: border-box;
+	list-style: none;
+}
+
+body {
+	/*background-image: url('../img/paven.png');*/
+	background-color: #F7FFFF;
+}
+
+/* HEADER */
+
+#header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-flow: row wrap;
+	background-color: white;
+	border-bottom: 1px solid #eee;
+	box-shadow: 0px 0px 5px #ccc;
+	padding: 8px 80px;
+	min-height: 60px;
+}
+
+#header .logo {
+	flex-grow: 1;
+	flex-basis: 75%;
+	font-size: 18px;
+	font-family: 'Helvetica';
+	color: #444;
+}
+
+#menu {
+	flex-grow: 1;
+	flex-basis: 25%;
+}
+
+#menu ul{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+#menu ul li a{
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	font-size: 12px;
+	color: #999;
+	transition: all 300ms;
+}
+
+#menu ul li a:hover {
+	color: #FE9A2E;
+	transform: scale(1.1, 1.1);
+}
+
+/* CONTENT */
+
+.content {
+	height: 780px;
+	width: 60%;
+	margin: 25px auto;
+}
+
+#form {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	background-color: white;
+}
+
+#form h4{
+	display: block;
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	padding: 15px;
+	font-size: 12px;
+	font-weight: normal;
+	color: #444;
+	background-color: #F4F4F4;
+}
+
+#form form {
+	display: flex;
+	flex-flow: column wrap;
+	width: 60%;
+	margin: 20px auto;
+}
+
+#form form .camp {
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+	font-family: 'Arial';
+}
+
+#form form .camp label {
+	text-align: right;
+	margin-right: 25px;
+	flex-basis: 30%;
+	font-size: 13px;
+}
+
+#form form .camp input{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 14px;
+}
+
+#form form .camp input[type="email"],
+#form form .camp input[type="password"] {
+	padding: 8px;
+	justify-content: flex-end;
+	flex-basis: 70%;
+}
+
+#form form .camp input[type="email"]:focus,
+#form form .camp input[type="password"]:focus{
+	box-shadow: 0px 0px 6px #FE9A2E;
+	border: 1px solid #FE9A2E;
+	border-radius: 5px;
+}
+
+#form form .camp input[type="submit"] {
+	flex-basis: 15%;
+}
+
+.button {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	background-color: #FE9A2E;
+	border: 1px solid #FE9A2E;
+	border-radius: 3px;
+	color: white;
+	transition: all 300ms;
+}
+
+.button:hover {
+	box-shadow: 0px 0px 6px #FE9A2E;
+}
+
+.remind {
+	text-align: left;
+	margin-left: 10px;
+	font-size: 12px;
+}
+
+.forgotten {
+	font-size: 12px;
+	margin-left: 8px;
+	text-decoration: none;
+	color: #e8842c;
+}
+
+.forgotten:hover {
+	text-decoration: underline;
+}
+
+/* FOOTER */
+
+#footer {
+	border-top: 1px solid #eee;
+	box-shadow: 0px 0px 5px #ccc;
+	min-height: 60px;
+	text-align: center;
+}
+
+#footer h4 {
+	margin-top: 20px;
+	color: #888;
+	font-size: 14px;
+	font-weight: normal;;
+}
