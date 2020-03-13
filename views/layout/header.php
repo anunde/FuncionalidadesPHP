@@ -11,8 +11,8 @@
 		<div class="logo">UsuariosLog</div>
 		<nav id="menu">
 			<ul>
-				<li><a href="#">Iniciar sesión</a></li>
-				<li><a href="#">Registrarse</a></li>
+				<li><a href="<?=base_url?>">Iniciar sesión</a></li>
+				<li><a href="<?=base_url?>?action=register">Registrarse</a></li>
 			</ul>
 		</nav>
 	</header>

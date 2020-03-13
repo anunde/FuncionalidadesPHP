@@ -111,6 +111,7 @@ body {
 	font-size: 14px;
 }
 
+#form form .camp input[type="text"],
 #form form .camp input[type="email"],
 #form form .camp input[type="password"] {
 	padding: 8px;
@@ -118,6 +119,7 @@ body {
 	flex-basis: 70%;
 }
 
+#form form .camp input[type="email"]:focus,
 #form form .camp input[type="email"]:focus,
 #form form .camp input[type="password"]:focus{
 	box-shadow: 0px 0px 6px #FE9A2E;
@@ -130,8 +132,7 @@ body {
 }
 
 .button {
-	padding-top: 8px;
-	padding-bottom: 8px;
+	padding: 8px 2px;
 	background-color: #FE9A2E;
 	border: 1px solid #FE9A2E;
 	border-radius: 3px;
@@ -158,6 +159,55 @@ body {
 
 .forgotten:hover {
 	text-decoration: underline;
+}
+
+/* ERRORES */
+
+.invalid-feedback {
+	display: block;
+	font-size: 10px;
+	text-align: right;
+	margin-top: 3px;
+	margin-bottom: 10px;
+	padding-right: 20px;
+	color: red;
+}
+
+#form form .no-valid {
+	display: flex;
+	align-items: center;
+	margin-bottom: 3px;
+	font-family: 'Arial';
+}
+
+#form form .no-valid label {
+	text-align: right;
+	margin-right: 25px;
+	flex-basis: 30%;
+	font-size: 13px;
+}
+
+#form form .no-valid input{
+	border: 1px solid red;
+	box-shadow: 0px 0px 5px red;
+	border-radius: 5px;
+	font-size: 14px;
+}
+
+#form form .no-valid input[type="text"],
+#form form .no-valid input[type="email"],
+#form form .no-valid input[type="password"] {
+	padding: 8px;
+	justify-content: flex-end;
+	flex-basis: 70%;
+}
+
+#form form .no-valid input[type="email"]:focus,
+#form form .no-valid input[type="email"]:focus,
+#form form .no-valid input[type="password"]:focus{
+	box-shadow: 0px 0px 6px #FE9A2E;
+	border: 1px solid #FE9A2E;
+	border-radius: 5px;
 }
 
 /* FOOTER */
